@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Beast Fit",
+    "description": "we are #1",
+    "price": 123.5,
+    "open": false,
+    "trainer": 4,
+    "street": "Aristotelessteig 6",
+    "PLZ": 10318,
+    "city": "Berlin",
+    "contract": 1,
+    "duschen": "nein"
+  },
+  {
+    "id": 2,
+    "title": "Students fitness",
+    "description": "only for students",
+    "price": 50.0,
+    "open": false,
+    "trainer": 3,
+    "street": "Treskowallee 8",
+    "PLZ": 10318,
+    "city": "Berlin",
+    "contract": 1,
+    "duschen": "kostenpflichtig"
+  },
+  {
+    "id": 3,
+    "title": "get fit",
+    "description": "best fit studio in the world !!",
+    "price": 500.0,
+    "open": true,
+    "trainer": 1,
+    "street": "Frankfurter Allee 111",
+    "PLZ": 10247,
+    "city": "Berlin",
+    "contract": 12,
+    "duschen": "kostenlos"
+  },
+  {
+    "id": 4,
+    "title": "fitness 4ever",
+    "description": "big professional studio !",
+    "price": 250.0,
+    "open": true,
+    "trainer": 2,
+    "street": "Straße des 17. Juni 135",
+    "PLZ": 10623,
+    "city": "Berlin",
+    "contract": 24,
+    "duschen": "kostenlos"
+  },
+  {
+    "id": 5,
+    "title": "fitness 4Life",
+    "description": "expensive Münchner studio !",
+    "price": 1000.0,
+    "open": true,
+    "trainer": 1,
+    "street": "Kaufingerstraße 17",
+    "PLZ": 80331,
+    "city": "München",
+    "contract": 24,
+    "duschen": "kostenlos"
+  }
+]

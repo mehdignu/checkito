@@ -1,0 +1,141 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Studios search{% endblock %}
+
+
+
+{% block body %}
+
+
+    {% if studios %}
+
+        <h4 class="text-center"><b>Studios Search Result</b></h4>
+
+
+        <table id="studios" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Open</th>
+                <th>Trainer</th>
+                <th>Street</th>
+                <th>PLZ</th>
+                <th>City</th>
+                <th>Bewertung</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% if top_affordable_rated %}
+                {% for top_studio in top_affordable_rated %}
+
+                <tr class="table-danger">
+                    <td>{{ top_studio.title }} </td>
+                    <td>
+                        {{ top_studio.description }}
+                    </td>
+                    <td>
+                        {{ top_studio.price }}
+                    </td>
+                    <td>
+                        {{ top_studio.open }}
+                    </td>
+                    <td>
+                        {{ top_studio.trainer }}
+                    </td>
+                    <td>
+                        {{ top_studio.street }}
+                    </td>
+                    <td>
+                        {{ top_studio.PLZ }}
+                    </td>
+                    <td>
+                        {{ top_studio.city }}
+                    </td>
+
+                    <td>
+                        {{ top_studio.note }}
+                    </td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+
+
+
+            {% if top_rated %}
+                {% for top_studio in top_rated %}
+
+                <tr class="table-secondary">
+                    <td>{{ top_studio.title }} </td>
+                    <td>
+                        {{ top_studio.description }}
+                    </td>
+                    <td>
+                        {{ top_studio.price }}
+                    </td>
+                    <td>
+                        {{ top_studio.open }}
+                    </td>
+                    <td>
+                        {{ top_studio.trainer }}
+                    </td>
+                    <td>
+                        {{ top_studio.street }}
+                    </td>
+                    <td>
+                        {{ top_studio.PLZ }}
+                    </td>
+                    <td>
+                        {{ top_studio.city }}
+                    </td>
+
+                    <td>
+                        {{ top_studio.note }}
+                    </td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+
+
+            {% for studio in studios %}
+                <tr>
+                    <td>{{ studio.title }}</td>
+                    <td>
+                        {{ studio.description }}
+                    </td>
+                    <td>
+                        {{ studio.price }}
+                    </td>
+                    <td>
+                        {{ studio.open }}
+                    </td>
+                    <td>
+                        {{ studio.trainer }}
+                    </td>
+                    <td>
+                        {{ studio.street }}
+                    </td>
+                    <td>
+                        {{ studio.PLZ }}
+                    </td>
+                    <td>
+                        {{ studio.city }}
+                    </td>
+
+                    <td>
+                        {{ studio.note }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4 class="text-center"><b>No studios been found</b></h4>
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="/js/main.js"></script>
+{% endblock %}
